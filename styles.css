@@ -1,53 +1,66 @@
 :root {
-    --bg: #222831;
-    --surface: #393E46;
-    --text: #EEEEEE;
-    --accent: #D65A31;
-    --border: #4a4d50;
-    --muted: #E3D0B2;
-    --win: #279c27;
-    --lose: #f0365b;
-    --tie: #A9A9A9;
+  --bg: #222831;
+  --surface: #393e46;
+  --text: #eeeeee;
+  --accent: #d65a31;
+  --border: #4a4d50;
+  --muted: #e3d0b2;
+  --win: #279c27;
+  --lose: #f0365b;
+  --tie: #a9a9a9;
 }
 
 [data-theme="light"] {
-    --bg: #EEEEEE;
-    --surface: #7c818a;
-    --text: #222831;
-    --accent: #D65A31;
-    --border: #4a4d50;
-    --muted: #6d675f;
-    --win: #279c27;
-    --lose: #f0365b;
-    --tie: #A9A9A9;
+  --bg: #eeeeee;
+  --surface: #7c818a;
+  --text: #222831;
+  --accent: #d65a31;
+  --border: #4a4d50;
+  --muted: #6d675f;
+  --win: #279c27;
+  --lose: #f0365b;
+  --tie: #a9a9a9;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: var(--bg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    color: var(--text);
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 320px;
+  color: var(--text);
 }
 
 .main-container {
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    width: 60%;
-    height: 80%;
-    border-radius: 2rem;
-    padding: 16px 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  width: 60%;
+  min-height: 80vh;
+  border-radius: 2rem;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.display-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 500px;
+}
+.player,
+.computer,
+.vs {
+  border: 1px solid var(--border);
 }
