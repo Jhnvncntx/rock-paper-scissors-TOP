@@ -10,13 +10,13 @@
     --tie: #A9A9A9;
 }
 
-[dark-theme="light"] {
+[data-theme="light"] {
     --bg: #EEEEEE;
     --surface: #7c818a;
     --text: #222831;
     --accent: #D65A31;
     --border: #4a4d50;
-    --muted: #E3D0B2;
+    --muted: #6d675f;
     --win: #279c27;
     --lose: #f0365b;
     --tie: #A9A9A9;
