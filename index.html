@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>This is rock paper scissors game.</h1>
+    
+    <div class="main-container">
+        <h1>This is rock paper scissors game.</h1>
+        <div class="game-container">
+            <div class="display-section">
+                this is the display section
+                <div class="player">this is the player section</div>
+                <div class="computer">this is the computer section</div>
+            </div>
+            <div class="control-section">
+                <button class="control-button" id="rock-btn">Rock</button>
+                <button class="control-button" id="paper-btn">Paper</button>
+                <button class="control-button" id="scissors-btn">Scissors</button>
+                <button class="control-button" id="restart-btn">Restart Game</button>
+            </div>
+        </div>
+        <div class="result"></div>
+        <button class="game-button" id="restart-btn" style="display: none;">Restart Game</button>
+        <div class="final-result"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
